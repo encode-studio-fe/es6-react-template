@@ -20,8 +20,8 @@
 - [Webpack Hot Middleware](https://github.com/glenjamin/webpack-hot-middleware)：支持基于 Express 的热更新；
 - [Webpack Bundle Analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer)：打包分析工具；
 - [morgan](https://github.com/expressjs/morgan)：服务器日志；
-- 压缩 JS ([terser-webpack-plugin](https://github.com/webpack-contrib/terser-webpack-plugin))；
-- 压缩 CSS ([css-minimizer-webpack-plugin](https://github.com/webpack-contrib/css-minimizer-webpack-plugin))；
+- [terser-webpack-plugin](https://github.com/webpack-contrib/terser-webpack-plugin)：压缩 JS ；
+- [css-minimizer-webpack-plugin](https://github.com/webpack-contrib/css-minimizer-webpack-plugin)：压缩 CSS；
 
 ## 🛡️ 配置要求
 
@@ -56,7 +56,7 @@ pnpm run start  # 运行生产环境下的服务端
 
 > 注意：如果想切换端口号，请在 `./src/config`中修改。
 
-## 🚀
+## 🚀 运行指令
 
 使用[cross-env](https://github.com/kentcdodds/cross-env)提供跨平台的设置及环境变量：
 
