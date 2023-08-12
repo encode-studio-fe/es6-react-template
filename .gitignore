@@ -1,0 +1,10 @@
+# Dependencies
+node_modules
+
+# Testing
+coverage
+
+# Misc
+.DS_Store
+*.log
+

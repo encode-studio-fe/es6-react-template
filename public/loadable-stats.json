@@ -1,0 +1,68 @@
+{
+  "hash": "863460b53811f929f8a0",
+  "publicPath": "",
+  "outputPath": "D:\\360MoveData\\Users\\Admin\\Desktop\\es6-react-template\\public\\server",
+  "assetsByChunkName": {
+    "main": [
+      "index.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "assets by status",
+      "cached": true,
+      "filteredChildren": 1,
+      "size": 65919
+    }
+  ],
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        179
+      ],
+      "assets": [
+        {
+          "name": "index.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "Home": {
+      "name": "Home",
+      "chunks": [],
+      "assets": [],
+      "filteredAssets": 0,
+      "assetsSize": 0,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    },
+    "UserInfo": {
+      "name": "UserInfo",
+      "chunks": [],
+      "assets": [],
+      "filteredAssets": 0,
+      "assetsSize": 0,
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 0,
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": 179,
+      "files": [
+        "index.js"
+      ]
+    }
+  ]
+}

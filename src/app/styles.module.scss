@@ -1,0 +1,30 @@
+@import "../theme/variables";
+
+body {
+  background-color: $color-dark-gray;
+  font-family: "Helvetica-Light", Helvetica, Arial, sans-serif;
+}
+
+.App {
+  color: $color-white;
+
+  .header {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    overflow: auto;
+    padding: 15px;
+
+    img {
+      float: left;
+      height: 70px;
+      margin-right: 1em;
+    }
+  }
+
+  hr {
+    margin-bottom: 0;
+    margin-top: 0;
+    opacity: 0.15;
+  }
+}
