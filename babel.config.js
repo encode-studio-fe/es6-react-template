@@ -5,10 +5,6 @@ module.exports = (api) => {
     presets: [
       [
         "@babel/env",
-        {
-          useBuiltIns: isWeb ? "usage" : undefined,
-          corejs: isWeb ? 3 : false,
-        },
       ],
       "@babel/typescript",
       [
