@@ -1,12 +1,12 @@
-@import "../theme/variables";
+@use "../theme/variables";
 
 body {
-  background-color: $color-dark-gray;
+  background-color: variables.$color-dark-gray;
   font-family: "Helvetica-Light", Helvetica, Arial, sans-serif;
 }
 
 .App {
-  color: $color-white;
+  color: variables.$color-white;
 
   .header {
     display: block;

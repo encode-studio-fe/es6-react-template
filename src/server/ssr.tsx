@@ -13,11 +13,7 @@ import createStore from "../store";
 import renderHtml from "./renderHtml";
 import routes from "../routes";
 
-export default async (
-  req: Request,
-  res: Response,
-  next: NextFunction
-): Promise<void> => {
+export default async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   const { store } = createStore({ url: req.url });
 
   // The method for loading data from server-side
@@ -33,7 +29,7 @@ export default async (
               req,
               res,
             })
-            .map((item: Action) => store.dispatch(item))
+            .map((item: Action) => store.dispatch(item)),
         );
 
       return Promise.resolve(null);
@@ -46,7 +42,7 @@ export default async (
     // Load data from server-side first
     await loadBranchData();
 
-    const statsFile = path.resolve(process.cwd(), "public/loadable-stats");
+    const statsFile = path.resolve(process.cwd(), "public/loadable-stats.json");
     const extractor = new ChunkExtractor({ statsFile });
 
     const staticContext: Record<string, any> = {};
@@ -56,7 +52,7 @@ export default async (
         <StaticRouter location={req.path} context={staticContext}>
           {renderRoutes(routes)}
         </StaticRouter>
-      </Provider>
+      </Provider>,
     );
 
     const initialState = store.getState();
